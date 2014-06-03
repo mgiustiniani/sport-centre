@@ -19,7 +19,7 @@ class SportSpec extends ObjectBehavior
     {
         $this->shouldHaveType('Manticora\SportCentre\Domain\Model\Sport\Sport');
     }
-    function it_get_name_with_sport()
+    function it_getName_method_should_return_soccer()
     {
         $this->getName()->shouldReturn('Soccer');
     }

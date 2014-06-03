@@ -41,5 +41,4 @@ class FeatureContext extends BehatContext
 //        doSomethingWith($argument);
 //    }
 //
-
 }
