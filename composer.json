@@ -1,0 +1,27 @@
+{
+    "name": "manticora/sport-centre",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mario Giustiniani",
+            "email": "mariogiustiniani@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+
+    },
+    "config": {
+        "bin-dir": "bin/"
+    },
+    "autoload": {
+        "psr-0": {
+            "": "src/"
+        }
+    },
+    "require-dev": {
+        "behat/behat": "2.4.*@stable",
+        "phpspec/phpspec": "~2.0",
+        "phpunit/phpunit": "3.7.*@stable"
+    }
+}

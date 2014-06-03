@@ -1,0 +1,53 @@
+Usage:
+ run [-f|--format="..."] [--stop-on-failure] [--no-code-generation] [spec]
+
+Arguments:
+ spec                  Specs to run
+
+Options:
+ --format (-f)         Formatter
+ --stop-on-failure     Stop on failure
+ --no-code-generation  Do not prompt for missing method/class generation
+ --help (-h)           Display this help message.
+ --quiet (-q)          Do not output any message.
+ --verbose (-v|vv|vvv) Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
+ --version (-V)        Display this application version.
+ --ansi                Force ANSI output.
+ --no-ansi             Disable ANSI output.
+ --no-interaction (-n) Do not ask any interactive question (disables code generation).
+ --config (-c)         Specify a custom location for the configuration file
+
+Help:
+ The run command runs specifications:
+ 
+   php bin/phpspec run
+ 
+ Will run all the specifications in the spec directory.
+ 
+   php bin/phpspec run spec/ClassNameSpec.php
+ 
+ Will run only the ClassNameSpec.
+ 
+ By default, you will be asked whether missing methods and classes should
+ be generated. You can suppress these prompts and automatically choose not
+ to generate code with:
+ 
+   php bin/phpspec run --no-code-generation
+ 
+ You can choose to stop on failure and not attempt to run the remaining
+ specs with:
+ 
+   php bin/phpspec run --stop-on-failure
+ 
+ You can choose the output format with the format option e.g.:
+ 
+   php bin/phpspec run --format=dot
+ 
+ The available formatters are:
+ 
+    progress (default)
+    html
+    pretty
+    junit
+    dot
+ 
