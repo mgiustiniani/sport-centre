@@ -21,6 +21,6 @@ interface SportQueryRepository {
      * @param $name
      * @return mixed
      */
-    public function findByName($name);
+    public function findById($id);
 
 } 

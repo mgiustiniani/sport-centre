@@ -7,7 +7,10 @@ namespace Manticora\SportCentre\Domain\Model\Sport;
  */
 class Sport
 {
-
+    /**
+     * @var string
+     */
+    private $id;
 
     /**
      * @var string
@@ -15,11 +18,21 @@ class Sport
     private $name;
 
     /**
-     * @param $name string
+     * @param $id
+     * @param $name
      */
-    public function __construct($name)
+    public function __construct($id, $name)
     {
+        $this->id =  $id;
         $this->name = $name;
+    }
+
+    /**
+     * @return string
+     */
+    public function getId()
+    {
+        return $this->id;
     }
 
     /**
@@ -29,4 +42,5 @@ class Sport
     {
         return $this->name;
     }
+
 }
