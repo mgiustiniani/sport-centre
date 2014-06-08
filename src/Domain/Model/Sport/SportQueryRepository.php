@@ -11,16 +11,16 @@ namespace Manticora\SportCentre\Domain\Model\Sport;
  * Interface SportQueryRepository
  * @package Manticora\SportCentre\Domain\Model\Sport
  */
-interface SportQueryRepository {
+interface SportQueryRepository
+{
     /**
      * @return mixed
      */
     public function findAll();
 
     /**
-     * @param $name
+     * @param $id
      * @return mixed
      */
     public function findById($id);
-
-} 
+}

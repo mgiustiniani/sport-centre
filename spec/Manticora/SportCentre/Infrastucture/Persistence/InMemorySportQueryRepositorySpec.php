@@ -29,5 +29,10 @@ class InMemorySportQueryRepositorySpec extends ObjectBehavior
        $this->findById('1')->shouldHaveType('Manticora\SportCentre\Domain\Model\Sport\Sport');
        $this->findById('1')->getId()->shouldBeEqualTo("1");
    }
+
+   function it_return_a_null_when_find_unexistent_id()
+    {
+        $this->findById('3')->shouldBeNull();
+    }
 }
 

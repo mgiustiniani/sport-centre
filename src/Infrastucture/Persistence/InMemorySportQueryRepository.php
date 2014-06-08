@@ -31,15 +31,20 @@ class InMemorySportQueryRepository implements SportQueryRepository
     }
 
     /**
-     * @param $name
+     * @param $id
      * @return mixed
      */
     public function findById($id)
     {
-        foreach ( $this->elements as $element) {
+        foreach ($this->elements as $element) {
+            /**
+             * @var Sport
+             */
             if ($element->getId() == $id) {
                 return $element;
             }
         }
+
+        return null;
     }
 }

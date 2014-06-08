@@ -12,7 +12,9 @@ use Prophecy\Argument;
  */
 class SportSpec extends ObjectBehavior
 {
-    public function let($name) {
+
+    public function let($name)
+    {
         $this->beConstructedWith('1', 'Soccer');
     }
 
@@ -21,12 +23,12 @@ class SportSpec extends ObjectBehavior
         $this->shouldHaveType('Manticora\SportCentre\Domain\Model\Sport\Sport');
     }
 
-    function it_getName_method_should_return_soccer()
+    function it_get_name_method_should_return_soccer()
     {
         $this->getName()->shouldReturn('Soccer');
     }
 
-    function it_getId_method_should_return_soccer_id()
+    function it_get_id_method_should_return_soccer_id()
     {
         $this->getId()->shouldReturn('1');
     }

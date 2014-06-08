@@ -1,6 +1,7 @@
 <?php
 
 namespace Manticora\SportCentre\Domain\Model\Sport;
+
 /**
  * Class Sport
  * @package Manticora\SportCentre\Domain\Model\Sport
@@ -42,5 +43,4 @@ class Sport
     {
         return $this->name;
     }
-
 }
