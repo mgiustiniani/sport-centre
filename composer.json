@@ -19,7 +19,8 @@
     },
     "autoload": {
         "psr-4": {
-            "Manticora\\SportCentre\\": "src/"
+            "Manticora\\SportCentre\\": "src/",
+            "Manticora\\SportCentre\\Infrastucture\\Symfony\\Bundle\\ApiBundle\\Features\\Context\\":"features/bootstrap"
         }
     },
     "require-dev": {
