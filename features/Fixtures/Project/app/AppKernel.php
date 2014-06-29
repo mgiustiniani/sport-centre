@@ -20,7 +20,11 @@ class AppKernel extends Kernel
             new Symfony\Bundle\FrameworkBundle\FrameworkBundle(),
             new Symfony\Bundle\MonologBundle\MonologBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
-            new \Manticora\SportCentre\Infrastucture\Symfony\Bundle\ApiBundle\ManticoraApiBundle(),
+            new FOS\RestBundle\FOSRestBundle(),
+            new JMS\SerializerBundle\JMSSerializerBundle(),
+            new Manticora\SportCentre\Infrastucture\Symfony\Bundle\ApiBundle\ManticoraSportCentreApiBundle(),
+           // new Bazinga\Bundle\RestExtraBundle\BazingaRestExtraBundle(),
+            new Bazinga\Bundle\HateoasBundle\BazingaHateoasBundle(),
         );
     }
 

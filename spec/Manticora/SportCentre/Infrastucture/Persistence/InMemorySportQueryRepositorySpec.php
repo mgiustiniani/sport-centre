@@ -15,8 +15,13 @@ class InMemorySportQueryRepositorySpec extends ObjectBehavior
 {
     function it_is_initializable()
     {
-        $this->shouldImplement('Manticora\SportCentre\Domain\Model\Sport\SportQueryRepository');
+
         $this->shouldHaveType('Manticora\SportCentre\Infrastucture\Persistence\InMemorySportQueryRepository');
+    }
+
+    function it_implement_sport_query_repository_contract()
+    {
+        $this->shouldImplement('Manticora\SportCentre\Domain\Model\Sport\SportQueryRepository');
     }
 
    function it_return_a_collection_of_all_sports()

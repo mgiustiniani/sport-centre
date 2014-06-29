@@ -12,7 +12,7 @@ class SportControllerTest extends WebTestCase{
     {
         $client = static::createClient();
 
-        $client->request('GET', '/sports');
+        $client->request('GET', '/api/sports');
         $this->assertEquals('200',$client->getResponse()->getStatusCode());
 
     }

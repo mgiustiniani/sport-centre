@@ -1,0 +1,4 @@
+manticora_location:
+    resource: "@ManticoraSportCentreApiBundle/Resources/config/routing.xml"
+    prefix:   /api
+    type: rest

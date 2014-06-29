@@ -18,7 +18,7 @@ class SportSpec extends ObjectBehavior
         $this->beConstructedWith('1', 'Soccer');
     }
 
-    function it_is_initializable()
+    function it_is_initializable_with_sport_id_and_sport_name()
     {
         $this->shouldHaveType('Manticora\SportCentre\Domain\Model\Sport\Sport');
     }

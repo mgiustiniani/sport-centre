@@ -10,35 +10,34 @@ use Behat\Gherkin\Node\PyStringNode,
 //
 // Require 3rd-party libraries here:
 //
-//   require_once 'PHPUnit/Autoload.php';
-//   require_once 'PHPUnit/Framework/Assert/Functions.php';
+   require_once 'PHPUnit/Autoload.php';
+   require_once 'PHPUnit/Framework/Assert/Functions.php';
 //
 use Behat\MinkExtension\Context\MinkContext;
 use Behat\MinkExtension\Context\MinkDictionary;
 /**
  * Features context.
  */
-class SportContext extends BehatContext
+class SportContext extends MinkContext
 {
-    use MinkDictionary;
-    /**
-     * @Given /^I have client http$/
-     */
-    public function iHaveClientHttp()
-    {
-        return true;
-    }
-
-
-
 
     /**
-     * @When /^I visit "([^"]*)"$/
+     * @Given /^I add "([^"]*)" header equal to "([^"]*)"$/
      */
-    public function iVisit($arg1)
+    public function iAddHeaderEqualTo($header, $value)
     {
-        throw new PendingException();
+        $this->getSession()->setRequestHeader($header, $value);
     }
+
+    /**
+     * @Then /^I should response status code "([^"]*)"$/
+     */
+    public function iShouldResponseStatusCode($status_code)
+    {
+     $this->getSession()->getStatusCode() === $status_code;
+
+    }
+
 
 
 

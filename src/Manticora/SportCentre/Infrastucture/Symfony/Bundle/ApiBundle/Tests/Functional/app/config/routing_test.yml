@@ -1,0 +1,4 @@
+manticora_sport:
+    resource: "@ManticoraSportContreApiBundle/Resources/config/routing.xml"
+    prefix:   /api
+    type: rest

@@ -4,6 +4,7 @@ namespace Manticora\SportCentre\Domain\Model\Sport;
 
 /**
  * Class Sport
+ *
  * @package Manticora\SportCentre\Domain\Model\Sport
  */
 class Sport
@@ -29,6 +30,7 @@ class Sport
     }
 
     /**
+     * sport's id
      * @return string
      */
     public function getId()
@@ -37,6 +39,7 @@ class Sport
     }
 
     /**
+     * sport's name
      * @return string
      */
     public function getName()

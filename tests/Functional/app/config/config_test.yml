@@ -19,3 +19,15 @@ monolog:
         firephp:
             type:  firephp
             level: info
+fos_rest:
+    view:
+        serialize_null: true
+        view_response_listener: 'force'
+        formats:
+            json: true
+            xml:  true
+        templating_formats:
+            html: true
+
+sensio_framework_extra:
+    view: { annotations: false }
