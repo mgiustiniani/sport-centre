@@ -15,7 +15,8 @@
        "friendsofsymfony/rest-bundle":   "~1.4",
         "nelmio/api-doc-bundle": "@stable",
         "jms/serializer-bundle": "dev-master",
-        "willdurand/hateoas-bundle": "@stable"
+        "willdurand/hateoas-bundle": "@stable",
+        "cilex/cilex": "1.0.*@dev"
     },
     "config": {
         "bin-dir": "bin/"

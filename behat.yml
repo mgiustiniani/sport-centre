@@ -4,8 +4,8 @@ default:
   paths:
     features: features
     bootstrap: %behat.paths.features%/bootstrap
-  context:
-    class:      Manticora\SportCentre\Infrastucture\Symfony\Bundle\ApiBundle\Features\Context\SportContext
+#  context:
+#    class:      Manticora\SportCentre\Infrastucture\Symfony\Bundle\ApiBundle\Features\Context\SportContext
   extensions:
     Behat\Symfony2Extension\Extension:
       mink_driver: true
