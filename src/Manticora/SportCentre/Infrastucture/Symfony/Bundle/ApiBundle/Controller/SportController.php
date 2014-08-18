@@ -16,7 +16,7 @@ use FOS\RestBundle\Controller\Annotations as Rest;
 class SportController
 {
     /**
-     * @Rest\View(statusCode=200, serializerGroups="list")
+     * @Rest\View(statusCode=200)
      * @return Response
      */
     public function cgetAction()

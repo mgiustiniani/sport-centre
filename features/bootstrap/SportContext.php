@@ -26,6 +26,7 @@ class SportContext extends MinkContext
      */
     public function iAddHeaderEqualTo($header, $value)
     {
+        echo 'dsds';
         $this->getSession()->setRequestHeader($header, $value);
     }
 

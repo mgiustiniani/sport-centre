@@ -1,19 +1,17 @@
 default:
-  formatter:
-    name: pretty
-  paths:
-    features: features
-    bootstrap: %behat.paths.features%/bootstrap
-#  context:
-#    class:      Manticora\SportCentre\Infrastucture\Symfony\Bundle\ApiBundle\Features\Context\SportContext
+  suites:
+    default:
+      contexts: ["Manticora\SportCentre\Infrastucture\Symfony\Bundle\ApiBundle\Features\Context\SportContext"]
   extensions:
-    Behat\Symfony2Extension\Extension:
-      mink_driver: true
+    Behat\Symfony2Extension:
       kernel:
         env: test
         debug: true
         path: features/Fixtures/Project/app/AppKernel.php
         bootstrap: features/Fixtures/Project/app/bootstrap.php
-    Behat\MinkExtension\Extension:
+    Behat\MinkExtension:
+      sessions:
+        default:
+           symfony2: ~
+
       base_url: 'http://www.acme.dev/app_test.php/'
-      default_session: symfony2
