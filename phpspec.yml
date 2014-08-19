@@ -1,0 +1,4 @@
+suites:
+    sport_suite:
+        namespace: Manticora\SportCentre
+        psr4_prefix: Manticora\SportCentre

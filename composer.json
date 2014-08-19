@@ -23,7 +23,7 @@
     },
     "autoload": {
         "psr-4": {
-            "": "src/",
+            "Manticora\\SportCentre\\": "src/",
             "Manticora\\SportCentre\\Infrastucture\\Symfony\\Bundle\\ApiBundle\\Features\\Context\\":"features/bootstrap"
         }
     },
@@ -37,6 +37,7 @@
         "symfony/monolog-bundle":       "~2.3",
         "symfony/browser-kit":       "~2.3",
         "symfony/form":       "~2.3",
+        "symfony/validator":       "~2.3",
         "sensio/framework-extra-bundle":       "~2.3"
     }
 }
